@@ -2,7 +2,7 @@
 
 Code and results for the paper:
 
-**Do Published Transcriptomic Biomarkers of Vitiligo Replicate? An Independent RNA-seq Validation and Audit of Fourteen Gene Panels**
+**Are Transcriptomic Biomarkers for Vitiligo Replicated? An Independent Validation and Audit of Fourteen Gene Panels Using RNA-seq**
 Aryan Misra, Delhi Technological University (2026).
 
 The study takes 14 published vitiligo gene panels and tests them, without retraining, on an independent bulk RNA-seq cohort (GEO: GSE311770; 105 skin biopsies from 28 patients and 27 healthy controls). Each panel is scored with a direction-aware within-sample rank score and compared with 1,000 expression-matched random gene sets, with Benjamini-Hochberg FDR control across panels.
