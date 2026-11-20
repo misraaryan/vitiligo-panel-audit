@@ -1,5 +1,5 @@
 import pandas as pd, numpy as np, matplotlib
-matplotlib.use("Agg"); import matplotlib.pyplot as plt
+matplotlib.use("Agg"); matplotlib.rcParams["pdf.fonttype"] = 42; matplotlib.rcParams["ps.fonttype"] = 42; matplotlib.rcParams["font.family"] = "DejaVu Sans"; import matplotlib.pyplot as plt
 d = pd.read_csv("results_all.tsv", sep="\t")
 order = ["P01","P02","P03","P04","P05","P06","P07","P08","P09","S01","S02","S03","S04","S05","REF_IFNG_hallmark","REF_pigment_union_down"]
 lab = {r.set: (f"{r.set} {r.study}" if not r.set.startswith("REF") else ("IFN-γ hallmark (ref)" if "IFNG" in r.set else "Pigment genes (ref)"))
