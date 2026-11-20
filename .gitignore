@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+data/*.gz
+data/*.txt
+data/*.json
+data/ncbi_gene_ensembl_map.tsv
+data/pca.tsv

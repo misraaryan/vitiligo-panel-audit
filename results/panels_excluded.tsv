@@ -1,0 +1,3 @@
+study	pmid	doi	reason
+Lu 2025	40948579	10.1155/drp/6672081	30-gene ANN signature listed only in a figure; gene list not extractable. Also tested on GSE53148, which duplicates GSE53146 human samples.
+Xia 2026	-	Electronic Journal of Biotechnology	Full text not accessible here; discovery dataset unknown, so overlap with GSE311770 cannot be excluded. Revisit if full text obtained.

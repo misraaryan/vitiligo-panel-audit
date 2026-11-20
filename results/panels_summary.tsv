@@ -1,0 +1,15 @@
+panel	tier	study	theme	discovery	validation_claimed	auc_claimed	n_genes	n_detected	n_direction_reported	n_pigment	genes
+P01	primary	Luo 2023	Mitophagy	GSE53146+GSE75819 merged	qPCR only	0.89-0.99 per gene (training data)	5	5	5	0	GABARAPL2, USP8, RELA, SP1, TBC1D17
+P02	primary	Yang 2025	Oxidative stress	GSE75819 (lesional vs non-lesional; no healthy controls)	none	0.996 (training data)	1	1	1	1	DCT
+P03	primary	Liu 2025	Ferroptosis	GSE65127+GSE53146 merged	none	model 1.000; genes 0.74-0.85 (training data)	4	4	4	1	ALOX5, SNCA, SLC1A4, IL33
+P04	primary	Zhao 2023	ML (LASSO+SVM-RFE)	GSE53146+GSE75819 merged	GSE65127	0.998	2	2	2	2	DCT, KIF1A
+P05	primary	Lei 2020	WGCNA hub genes	GSE65127	GSE75819	reported in figures only	7	7	0	1	CACTIN, DCTN1, GPR143, HADH, MRPL47, NKTR, NUF2
+P06	primary	Zhang 2021	ML (WGCNA+LASSO+SVM-RFE+RF)	GSE53146+GSE65127+GSE75819 (RRA)	GSE90880 (blood)	0.942 (blood validation)	4	4	0	3	TYR, TYRP1, DCT, LARP7
+P07	primary	Zhao 2024	Autophagy hub genes	GSE75819 (lesional vs non-lesional)	qPCR only	not reported	10	10	10	0	PTEN, TP53, BCL2L1, MAPK3, ATG3, ATG9A, RELA, NFE2L2, CCL2, RB1CC1
+P08	primary	Yao 2026	Programmed cell death + SMR	GSE65127+GSE53146+GSE75819 merged	none	SLC1A5 0.733	2	2	2	0	SLC1A5, PARK7
+P09	primary	AbdElneam 2024	PPI hub genes	GSE65127 (GEO2R, healthy vs lesional)	none	not reported	10	10	10	10	TYR, MLANA, TYRP1, PMEL, OCA2, SLC45A2, GPR143, DCT, TRPM1, EDNRB
+S01	secondary	Zeng 2025	Shared with periodontitis	GEO vitiligo + periodontitis	none	PTGS2 ~0.8	3	3	3	0	PTGS2, CCL5, PRDX4
+S02	secondary	Xiang 2026	Shared with depression	GSE65127+GSE53146 (vitiligo) + GSE98793 (MDD)	GSE52790, GSE80009	0.76-0.80	3	3	1	0	EXOSC7, KLRG1, MAPK14
+S03	secondary	Lu 2024	Shared with Hashimoto's	GEO vitiligo + HT	qPCR (blood)	IFNG 0.86, IL1B 0.80, STAT1 0.89, CXCL10 1.00	4	3	4	0	IFNG, STAT1, IL1B, CXCL10
+S04	secondary	Wang 2024	Shared with psoriasis	GSE75819 + GSE30999	GSE65127	not reported	14	14	14	0	BUB1, CEP55, CDK1, TOP2A, CENPF, PBK, MELK, CCNB2, MAD2L1, NUSAP1, TTK, NEK2, CDKN3, PTTG1
+S05	secondary	Wang 2025	Blood-derived, tested in skin	blood microarrays	GSE53146, GSE75819	not stated for skin	2	2	2	0	HMGA1, PSMD13

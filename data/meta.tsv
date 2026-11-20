@@ -1,0 +1,106 @@
+sample	patient	region	batch	x
+1_VP_001_perilesioneel_huid_A12	VP001	perilesional	A	False
+1_VP_008_01_X_lesioneel_huid_A1	VP008	lesional	B	True
+2_VP_001_gezond_huid_B12	VP001	nonlesional	A	False
+2_VP_008_01_X_perilesioneel_huid_B1	VP008	perilesional	B	True
+3_VP_002_01_lesioneel__C12	VP002	lesional	A	False
+3_VP_008_01_X_gezond_huid_C1	VP008	nonlesional	B	True
+4_VP_002_01_perilesioneel__D12	VP002	perilesional	A	False
+4_VP_017_01_lesioneel_D1	VP017	lesional	B	False
+5_VP_002_01_gezond_E12	VP002	nonlesional	A	False
+5_VP_017_01_perilesioneel_E1	VP017	perilesional	B	False
+6_VP_003_01_lesioneel_F12	VP003	lesional	A	False
+6_VP_017_01_gezond_F1	VP017	nonlesional	B	False
+7_VP_003_01_perilesioneel_G12	VP003	perilesional	A	False
+7_VP_020_01_X_lesioneel_G1	VP020	lesional	B	True
+8_VP_003_01_gezond_H12	VP003	nonlesional	A	False
+8_VP_020_01_X_perilesioneel_H1	VP020	perilesional	B	True
+9_VP_004_01_lesioneel_A11	VP004	lesional	A	False
+9_VP_020_01_X_gezond_A2	VP020	nonlesional	B	True
+10_VP_004_01_perilesioneel_B11	VP004	perilesional	A	False
+10_controle_10_B2	C10	control	B	
+11_VP_004_01_gezond_C11	VP004	nonlesional	A	False
+11_controle_11_C2	C11	control	B	
+12_VP_005_01_lesioneel_D11	VP005	lesional	A	False
+12_controle_12_D2	C12	control	B	
+13_VP_005_01_perilesioneel_E11	VP005	perilesional	A	False
+13_VP_008_01_perilesioneel_huid_E2	VP008	perilesional	B	False
+14_VP_005_01_gezond_F11	VP005	nonlesional	A	False
+14_VP_008_01_gezond_F2	VP008	nonlesional	B	False
+15_VP_006_01_lesioneel_G11	VP006	lesional	A	False
+15_VP_021_01_lesioneel_G2	VP021	lesional	B	False
+16_VP_006_01_perilesioneel_H11	VP006	perilesional	A	False
+16_VP_021_01_perilesioneel_H2	VP021	perilesional	B	False
+17_VP_006_01_gezond_A10	VP006	nonlesional	A	False
+17_VP_021_01_gezond_A3	VP021	nonlesional	B	False
+18_VP_007_01_lesioneel_B10	VP007	lesional	A	False
+18_VP_024_01_lesioneel_huid_B3	VP024	lesional	B	False
+19_VP_007_01_perilesioneel__C10	VP007	perilesional	A	False
+19_VP_024_01_perilesioneel_huid_C3	VP024	perilesional	B	False
+20_VP_007_01_gezond__D10	VP007	nonlesional	A	False
+20_VP_024_01_gezond_huid_D3	VP024	nonlesional	B	False
+21_Controle_13_E3	C13	control	B	
+21_VP_009_01_lesioneel_E10	VP009	lesional	A	False
+22_Controle_14_F3	C14	control	B	
+22_VP_009_01_perilesioneel_F10	VP009	perilesional	A	False
+23_Controle_15_gezond_G3	C15	control	B	
+23_VP_009_01_gezond_G10	VP009	nonlesional	A	False
+24_VP_010_01_lesioneel_H10	VP010	lesional	A	False
+24_VP_013_01_perilesioneel_huid_H3	VP013	perilesional	B	False
+25_VP_010_01_perilesioneel_A9	VP010	perilesional	A	False
+25_VP_015_01_lesioneel_A4	VP015	lesional	B	False
+26_VP_010_01_gezond_B9	VP010	nonlesional	A	False
+26_VP_015_01_gezond_B4	VP015	nonlesional	B	False
+27_VP_011_01_lesioneel_C9	VP011	lesional	A	False
+27_VP_022_01_lesioneel_C4	VP022	lesional	B	False
+28_VP_011_01_perilesioneel_D9	VP011	perilesional	A	False
+28_VP_022_01_perilesioneel_D4	VP022	perilesional	B	False
+29_VP_011_01_gezond_E9	VP011	nonlesional	A	False
+29_VP_022_01_gezond_E4	VP022	nonlesional	B	False
+30_VP_012_01_lesioneel_F9	VP012	lesional	A	False
+30_VP_026_01_lesioneel_F4	VP026	lesional	B	False
+31_VP_012_01_perilesioneel_G9	VP012	perilesional	A	False
+31_VP_026_01_perilesioneel_G4	VP026	perilesional	B	False
+32_VP_012_01_gezond_H9	VP012	nonlesional	A	False
+32_VP_026_01_gezond_H4	VP026	nonlesional	B	False
+33_Control_16_A5	C16	control	B	
+33_VP_014_01_lesioneel_A8	VP014	lesional	A	False
+34_Control_17_B5	C17	control	B	
+34_VP_014_01_perilesioneel_B8	VP014	perilesional	A	False
+35_Control_18_C5	C18	control	B	
+35_VP_014_01_gezond_C8	VP014	nonlesional	A	False
+36_VP_016_01_lesioneel_D8	VP016	lesional	A	False
+36_VP_023_01_lesioneel_D5	VP023	lesional	B	False
+37_VP_016_01_perilesioneel_E8	VP016	perilesional	A	False
+37_VP_023_01_perilesioneel_E5	VP023	perilesional	B	False
+38_VP_016_01_gezond_F8	VP016	nonlesional	A	False
+38_VP_023_01_gezond_F5	VP023	nonlesional	B	False
+39_VP_018_01_lesioneel_G8	VP018	lesional	A	False
+39_VP_025_01_lesioneel_G5	VP025	lesional	B	False
+40_VP_018_01_perilesioneel_H8	VP018	perilesional	A	False
+40_VP_025_01_perilesioneel_H5	VP025	perilesional	B	False
+41_VP_018_01_gezond_A7	VP018	nonlesional	A	False
+41_VP_025_01_gezond_A6	VP025	nonlesional	B	False
+42_VP_019_01_perilesioneel_B7	VP019	perilesional	A	False
+42_VP_027_01_lesioneel_B6	VP027	lesional	B	False
+43_VP_019_01_gezond_C7	VP019	nonlesional	A	False
+43_VP_027_01_perilesioneel_C6	VP027	perilesional	B	False
+44_Control_1__D7	C01	control	A	
+44_VP_027_01_gezond_D6	VP027	nonlesional	B	False
+45_Control_2__E7	C02	control	A	
+45_Control_19_E6	C19	control	B	
+46_Control_3_F7	C03	control	A	
+46_Control_20_F6	C20	control	B	
+47_Control_4__G7	C04	control	A	
+47_Control_21_G6	C21	control	B	
+48_Control_5__H7	C05	control	A	
+48_Control_22_H6	C22	control	B	
+49_Control_6__A6	C06	control	A	
+49_Control_23_A7	C23	control	B	
+50_Control_7__B6	C07	control	A	
+50_Control_24_B7	C24	control	B	
+51_Control_8__C6	C08	control	A	
+51_Control_25_C7	C25	control	B	
+52_Control_9__D6	C09	control	A	
+52_Control_26_D7	C26	control	B	
+53_Control_27_E7	C27	control	B	
