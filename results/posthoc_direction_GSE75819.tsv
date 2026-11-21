@@ -1,0 +1,17 @@
+panel	gene	gse65127_dir	probe	n_pairs	median_log2_LminusN	frac_L_higher	wilcoxon_p	gse75819_dir	agree	agree_and_p05
+P05	DCTN1	down	ILMN_2412807	15.0	-0.854	0.0	6.1e-05	down	True	True
+P05	GPR143	down	ILMN_1756261	15.0	-0.152	0.4	0.19	down	True	False
+P05	HADH	down	ILMN_1719906	15.0	0.319	1.0	6.1e-05	up	False	False
+P05	MRPL47	up	ILMN_2391522	15.0	0.794	1.0	6.1e-05	up	True	True
+P05	NKTR	up	ILMN_1721621	15.0	1.126	0.933	0.00012	up	True	True
+P05	NUF2	up	ILMN_1658695	15.0	0.161	0.733	0.0058	up	True	True
+P05	CACTIN	up	not on GPL6884							
+P06	TYR	down	ILMN_1788774	15.0	-1.027	0.067	0.00012	down	True	True
+P06	TYRP1	down	ILMN_2054652	15.0	-1.752	0.0	6.1e-05	down	True	True
+P06	DCT	down	ILMN_1701783	15.0	-0.982	0.0	6.1e-05	down	True	True
+P06	LARP7	up	ILMN_2392717	15.0	2.146	1.0	6.1e-05	up	True	True
+S02	EXOSC7	up	ILMN_2055477	15.0	0.097	0.6	0.52	up	True	False
+S02	KLRG1	up	ILMN_1658399	15.0	0.162	0.8	0.0067	up	True	True
+ctrl	MLANA	down	ILMN_1710217	15.0	-1.376	0.067	0.00012	down	True	True
+ctrl	PMEL	down	ILMN_1665994	15.0	-2.792	0.0	6.1e-05	down	True	True
+ctrl	MAPK14	up	ILMN_2388090	15.0	0.169	0.8	0.083	up	True	False

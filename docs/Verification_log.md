@@ -89,3 +89,11 @@ Each earlier claim re-checked against its primary source. Status: CONFIRMED, COR
 - Fixed: Eq. 1 empty-set clause; precise per-compartment missing-sample statement (counts were correct, wording "two complete sets" was not); Phipson-Smyth p-value formula and reference; scored/total genes marked in Table I; inferred-direction and P02 notes in abstract and conclusion; Table III hyphenation; references renumbered in order of first citation.
 - Checked and not found: missing tilde and gamma symbols (render correctly; reviewer likely read text-extraction output); Table II overflow; "track loss melanocytes" wording.
 - Rejected: acceptance-odds percentages (no basis).
+
+## Pass 6 (22 Nov 2026): post hoc checks requested in external reviews
+
+1. Site-matched comparison, lesional vs perilesional skin of the same patient (23 pairs, VP-008 X and non-X kept as separate people as in the lock). P02 and P06 higher in lesional skin in 20/23 pairs (q < 0.001); P04, P09, S02 remain reversed (q <= 0.011); P05 16/23 (q = 0.13); S04 17/23 (q = 0.051); S03 and the IFN-gamma reference lower in lesional skin. Script `posthoc_site_matched.py`.
+2. The 13 directions inferred from GSE65127 were checked in GSE75819 (GPL6884, 15 paired L/N biopsies; values pulled from the GEO series matrix for the listed probes). CACTIN (C19orf29) is not on GPL6884. 11 of 12 agree (9 with Wilcoxon p < 0.05). HADH disagrees (up in all 15 pairs in GSE75819; down in GSE65127, log2 -0.28; in GSE311770 L vs HC median logCPM 5.47 vs 5.72, p = 0.078). Pairs share an intensity batch, checked. Script `posthoc_direction_GSE75819.py`.
+3. Rescoring with confirmed directions only: P05 L vs HC AUC 0.903 -> 0.927 (HADH and CACTIN removed), 0.907 with HADH flipped; P06 and S02 unchanged (all their checked directions agree). Script `posthoc_direction_rescore.py`.
+4. Replication-rule sensitivity: CI-only 6 (L) / 7 (PL); locked rule 3 / 3; 10,000 nulls q < 0.05 3 / 3; 10,000 nulls q < 0.01 1 (S04) / 0. The statement in one external guide that results are "unchanged at q < 0.01" is false and was not used. Script `posthoc_rule_sensitivity.py`.
+5. GEO records re-read for GSE75819, GSE65127, GSE53148 and GSE90880 (`verification/GEO_records_checked_2026-11-22.txt`). GSE75819 non-lesional samples are labelled "Normal Skin" in GEO; the paper now says so.

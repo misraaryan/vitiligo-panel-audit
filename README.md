@@ -17,6 +17,8 @@ The study takes 14 published vitiligo gene panels and tests them, without retrai
 
 A curated pigment gene set with no data-driven selection reaches AUC 0.94 in lesional skin. Full tables are in `results/`.
 
+Post hoc checks: in a site-matched comparison of lesional with perilesional skin from the same 23 patients, P02 and P06 stay strongly separated and P04, P09 and S02 stay reversed, while P05 and S04 weaken. Of the 12 inferred gene directions that could be checked in GSE75819, 11 agree.
+
 ## Pre-specified analysis
 
 All panels, gene directions, null gene sets, reference sets, covariates and the random seed were written to `gene_sets_locked.json` before any panel was scored. Its SHA-256 fingerprint is in `gene_sets_locked.sha256`, and `code/stage45_evaluate.py` stops if the file has changed:
@@ -36,6 +38,7 @@ code/                     analysis scripts (run from the repository root)
 data/                     sample metadata; raw inputs are downloaded (see data/README.md)
 results/                  all result tables and figures, as used in the paper
 docs/                     QC report, panel extraction notes, results summary, verification log
+verification/             GEO records and GSE75819 probe values backing factual claims (see verification/README.md)
 ```
 
 ## Reproducing the analysis
@@ -59,6 +62,9 @@ Download the public inputs into `data/` as described in `data/README.md`, then r
 | 7. Independent recomputation and audit | `code/audit.py` | `audit_*.tsv` |
 | 8. Post hoc null and VP-008 checks | `code/sens_null_vp008.py`, `code/sens_null_10k.py` | `sens_*.tsv`, `results_exploratory_melanocyte_v2.tsv` |
 | 9. Figures | `code/make_figure.py`, `code/make_figure_paper.py` | `fig_forest_AUC*.png/pdf` |
+| 10. Post hoc: site-matched lesional vs perilesional | `code/posthoc_site_matched.py` | `posthoc_site_matched.tsv` |
+| 11. Post hoc: check inferred directions in GSE75819 | `code/posthoc_direction_GSE75819.py`, then `code/posthoc_direction_rescore.py` | `posthoc_direction_*.tsv` |
+| 12. Post hoc: replication-rule sensitivity (needs `results_all.tsv` and `sens_null_10k.tsv` in the working directory) | `code/posthoc_rule_sensitivity.py` | `posthoc_rule_sensitivity.tsv` |
 
 Scripts write their outputs to the working directory; the copies used in the paper are in `results/`. To reproduce the published numbers exactly, keep the committed `gene_sets_locked.json` and run steps 1 and 5 onwards. Re-running step 4 rebuilds the lock from the current NCBI gene annotation, which may differ slightly from the version used here.
 

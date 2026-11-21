@@ -1,0 +1,24 @@
+GEO series records, retrieved 22 Nov 2026 from https://www.ncbi.nlm.nih.gov/geo/ (SOFT text, brief view).
+Only the fields relevant to claims in the paper are kept.
+
+GSE75819
+  Title: Microarray data vitiligo patients lesional and non-lesional skin
+  Overall design: there are 30 samples from 15 individuals' lesional and non-lesional skin
+  Platform: GPL6884 (Illumina HumanWG-6 v3.0)   PubMed: 28852211
+  Sample labels: 15 x "VDxxV" source "Lesional Skin" (tissue: Lesional Vitiligo Skin)
+                 15 x "VDxxN" source "Normal Skin"   (tissue: Normal Vitiligo Skin)
+  Note: no healthy donors. The "Normal Skin" samples are non-lesional skin of the same patients.
+  Pairs (VD number): 13 18 19 20 22 23 24 32 33 37 38 39 40 44 49
+
+GSE65127
+  Title: Targeting the WNT pathway for repigmenting vitiligo
+  Overall design: 40 chips. 10 patients (lesional, perilesional, non-lesional) and 10 healthy volunteers (matched anatomical areas)
+  Platform: GPL570   PubMed: 26322948
+
+GSE53148
+  Title: Gene expression profiles in vitiligo lesional skin
+  SuperSeries of GSE53146 and GSE53147; 16 samples; platforms GPL6887, GPL14951   PubMed: 24523323
+
+GSE90880
+  Title: Expression data from blood of healthy controls and ns vitiligo patients
+  Tissue: peripheral blood (PBMC), not skin; 14 samples; platform GPL8300   PubMed: 28129744

@@ -1,0 +1,5 @@
+rule	lesional_vs_healthy_n	lesional_vs_healthy_panels	perilesional_vs_healthy_n	perilesional_vs_healthy_panels
+CI lower bound > 0.5 only	6	P02, P05, P06, P07, P08, S04	7	P02, P05, P06, P07, S01, S03, S04
+Locked: CI > 0.5 and q < 0.05 (1,000 nulls)	3	P05, P06, S04	3	P05, P06, S03
+CI > 0.5 and q < 0.05 (10,000 nulls)	3	P05, P06, S04	3	P05, P06, S03
+CI > 0.5 and q < 0.01 (10,000 nulls)	1	S04	0	none
