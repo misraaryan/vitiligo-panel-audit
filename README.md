@@ -17,7 +17,7 @@ The study takes 14 published vitiligo gene panels and tests them, without retrai
 
 A curated pigment gene set with no data-driven selection reaches AUC 0.94 in lesional skin. Full tables are in `results/`.
 
-Post hoc checks: in a site-matched comparison of lesional with perilesional skin from the same 23 patients, P02 and P06 stay strongly separated and P04, P09 and S02 stay reversed, while P05 and S04 weaken. Of the 12 inferred gene directions that could be checked in GSE75819, 11 agree. In a second, single-cell cohort (GSE298871, pseudobulk, 6 lesional vs 6 healthy), P05 and P06 replicate again, P04 and P09 are again reversed, and S04 does not replicate.
+Post hoc checks: in a site-matched comparison of lesional with perilesional skin from the same 23 patients, P02 and P06 stay strongly separated and P04, P09 and S02 stay reversed, while P05 and S04 weaken. Of the 12 inferred gene directions that could be checked in GSE75819, 11 agree. In a second, single-cell cohort (GSE298871, pseudobulk, 6 lesional vs 6 healthy), P05 and P06 replicate again, P04 and P09 again point in the opposite direction (AUC 0.17 and 0.11; exact p = 0.065 and 0.026), and S04 does not replicate.
 
 ## Pre-specified analysis
 
