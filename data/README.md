@@ -10,6 +10,7 @@ Download the following public files into this folder:
 | `GSE65127_series_matrix.txt.gz` | GEO series GSE65127, series matrix |
 | `GPL570-55999.txt` | GEO platform GPL570, full annotation table |
 | `HALLMARK_INTERFERON_GAMMA_RESPONSE.v2026.2.Hs.json` | MSigDB, Hallmark collection, JSON export |
+| `GSE298871_RAW.tar` (post hoc second cohort; extract into its own folder) | GEO series GSE298871, supplementary file |
 | `ncbi_gene_ensembl_map.tsv` | Built from NCBI `Homo_sapiens.gene_info.gz` with `code/make_gene_map.py` |
 
 GEO: https://www.ncbi.nlm.nih.gov/geo/

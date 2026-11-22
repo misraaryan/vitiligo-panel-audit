@@ -1,0 +1,18 @@
+sample	group	n_cells	n_keratinocytes	frac_keratinocytes_cycling	frac_Tcells_cycling	S04_score_keratinocyte_pseudobulk
+465	control	542	57	0.1228	0.0	0.5966
+486_LS	lesional	1345	217	0.1336	0.0345	0.5086
+486_NL	nonlesional	200	3	0.0		0.4485
+632	control	1106	105	0.1238	0.0333	0.5345
+658	control	593	21	0.0	0.0	0.2254
+BIO023_LS	lesional	1249	518	0.0598	0.05	0.542
+CON161	control	975	597	0.0704	0.0385	0.638
+CON171	control	1081	233	0.073	0.0164	0.5503
+CON194	control	1690	554	0.0379	0.0	0.4883
+DER114_LS	lesional	2701	1299	0.1178	0.0194	0.6385
+DER114_NL	nonlesional	2022	762	0.0525	0.0118	0.5352
+DER115_LS	lesional	3485	1031	0.0669	0.0269	0.6008
+DER115_NL	nonlesional	2483	994	0.0956	0.0124	0.5514
+DER119_LS	lesional	2699	504	0.0496	0.0577	0.4948
+DER119_NL	nonlesional	1073	238	0.0798	0.0303	0.4723
+DER120_LS	lesional	505	168	0.1667	0.0	0.5266
+DER120_NL	nonlesional	997	333	0.0841	0.0	0.5763

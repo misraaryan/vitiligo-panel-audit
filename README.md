@@ -17,7 +17,7 @@ The study takes 14 published vitiligo gene panels and tests them, without retrai
 
 A curated pigment gene set with no data-driven selection reaches AUC 0.94 in lesional skin. Full tables are in `results/`.
 
-Post hoc checks: in a site-matched comparison of lesional with perilesional skin from the same 23 patients, P02 and P06 stay strongly separated and P04, P09 and S02 stay reversed, while P05 and S04 weaken. Of the 12 inferred gene directions that could be checked in GSE75819, 11 agree.
+Post hoc checks: in a site-matched comparison of lesional with perilesional skin from the same 23 patients, P02 and P06 stay strongly separated and P04, P09 and S02 stay reversed, while P05 and S04 weaken. Of the 12 inferred gene directions that could be checked in GSE75819, 11 agree. In a second, single-cell cohort (GSE298871, pseudobulk, 6 lesional vs 6 healthy), P05 and P06 replicate again, P04 and P09 are again reversed, and S04 does not replicate.
 
 ## Pre-specified analysis
 
@@ -65,6 +65,7 @@ Download the public inputs into `data/` as described in `data/README.md`, then r
 | 10. Post hoc: site-matched lesional vs perilesional | `code/posthoc_site_matched.py` | `posthoc_site_matched.tsv` |
 | 11. Post hoc: check inferred directions in GSE75819 | `code/posthoc_direction_GSE75819.py`, then `code/posthoc_direction_rescore.py` | `posthoc_direction_*.tsv` |
 | 12. Post hoc: replication-rule sensitivity (needs `results_all.tsv` and `sens_null_10k.tsv` in the working directory) | `code/posthoc_rule_sensitivity.py` | `posthoc_rule_sensitivity.tsv` |
+| 13. Post hoc: second cohort GSE298871 (pseudobulk; needs `GSE298871_RAW.tar` from GEO extracted into a folder) | `code/sc_load_GSE298871.py`, `code/posthoc_GSE298871_pseudobulk.py`, `code/posthoc_GSE298871_celltypes.py` | `posthoc_GSE298871_*.tsv` |
 
 Scripts write their outputs to the working directory; the copies used in the paper are in `results/`. To reproduce the published numbers exactly, keep the committed `gene_sets_locked.json` and run steps 1 and 5 onwards. Re-running step 4 rebuilds the lock from the current NCBI gene annotation, which may differ slightly from the version used here.
 
@@ -79,6 +80,7 @@ A term is omitted when its set is empty. The score needs no training and no norm
 ## Data sources
 
 - GSE311770: Berrevoet D. et al., Front. Immunol. 2026, doi:10.3389/fimmu.2026.1829996
+- GSE298871: Brunner P. M. et al., J. Allergy Clin. Immunol. 2025 (second cohort, post hoc)
 - GSE65127: Regazzetti C. et al., J. Invest. Dermatol. 2015, doi:10.1038/jid.2015.335
 - MSigDB Hallmark Interferon-gamma response, v2026.2
 - NCBI Gene (Homo sapiens gene_info) for symbol to Ensembl mapping

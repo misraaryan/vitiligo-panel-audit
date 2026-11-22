@@ -1,0 +1,7 @@
+measure	comparison	AUC	p_exact
+S04_score_keratinocyte_pseudobulk	lesional vs control	0.556	0.8182
+S04_score_keratinocyte_pseudobulk	nonlesional vs control	0.433	0.7922
+frac_keratinocytes_cycling	lesional vs control	0.611	0.5887
+frac_keratinocytes_cycling	nonlesional vs control	0.483	1.0
+frac_Tcells_cycling	lesional vs control	0.736	0.2403
+frac_Tcells_cycling	nonlesional vs control	0.479	1.0

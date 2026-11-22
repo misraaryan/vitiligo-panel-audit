@@ -12,6 +12,7 @@ Files backing the factual claims in the paper and the post hoc checks added on 2
 | P05 AUC 0.90 to 0.93 without HADH; P06 and S02 unchanged | `posthoc_direction_rescore.tsv`, made by `../posthoc_direction_rescore.py` |
 | Site-matched lesional vs perilesional comparison (23 pairs) | `posthoc_site_matched.tsv`, made by `../posthoc_site_matched.py` |
 | Replication count under alternative rules (6 / 3 / 3 / 1 lesional) | `posthoc_rule_sensitivity.tsv`, made by `../posthoc_rule_sensitivity.py` |
+| Second cohort GSE298871: 17 single-cell samples (6 healthy, 6 lesional, 5 non-lesional), bulk data not deposited | GEO record GSE298871 (platform GPL24676); results in `posthoc_GSE298871_*.tsv`, made by `posthoc_GSE298871_pseudobulk.py` and `posthoc_GSE298871_celltypes.py` |
 
 GSE75819 notes: values are BeadStudio average-normalised after background subtraction and can be negative, and the series has two intensity batches. Every lesional and non-lesional pair sits in the same batch, so only within-pair differences of log2(max(x, 0) + 16) are used. For genes with several probes, the probe with the highest mean signal is used.
 

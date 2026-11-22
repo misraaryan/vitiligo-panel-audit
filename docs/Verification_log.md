@@ -97,3 +97,12 @@ Each earlier claim re-checked against its primary source. Status: CONFIRMED, COR
 3. Rescoring with confirmed directions only: P05 L vs HC AUC 0.903 -> 0.927 (HADH and CACTIN removed), 0.907 with HADH flipped; P06 and S02 unchanged (all their checked directions agree). Script `posthoc_direction_rescore.py`.
 4. Replication-rule sensitivity: CI-only 6 (L) / 7 (PL); locked rule 3 / 3; 10,000 nulls q < 0.05 3 / 3; 10,000 nulls q < 0.01 1 (S04) / 0. The statement in one external guide that results are "unchanged at q < 0.01" is false and was not used. Script `posthoc_rule_sensitivity.py`.
 5. GEO records re-read for GSE75819, GSE65127, GSE53148 and GSE90880 (`verification/GEO_records_checked_2026-11-22.txt`). GSE75819 non-lesional samples are labelled "Normal Skin" in GEO; the paper now says so.
+
+## Pass 7 (22 Nov 2026): second cohort, GSE298871 (post hoc)
+
+1. GEO record re-read: 17 samples (6 healthy, 6 lesional, 5 non-lesional), platform GPL24676, 10x matrices only; the bulk RNA-seq of the same study was not deposited. Three healthy samples are named 465, 632, 658 and three CON161/171/194, which suggests two sources of healthy skin; noted, not adjusted.
+2. Pseudobulk: UMIs summed over all cells per biopsy (200 to 3,485 cells); CPM > 1 in >= 4 samples kept 18,360 genes. Locked panels, locked null sets and the same rank score applied unchanged; AUC p exact.
+3. Lesional vs healthy (6 vs 6): P05 0.889 (q 0.035), P06 0.972 (q 0.035), pigment reference 0.917, P04 0.167, P09 0.111, P02 0.833 (q 0.16), S04 0.639 (q 0.61), S02 0.500, S03 0.861 (q 0.16).
+4. Composition varies widely (keratinocytes 1.5% to 61%). Excluding 658 (3.5% keratinocytes, mostly endothelium) and 486_NL (200 cells, 3 keratinocytes): P02 1.00 (q 0.014), P06 1.00, P05 0.90, P04 0.00, P09 0.00, P03 0.83 (q 0.049), S04 0.57. P03 passing only in the sensitivity analysis is not claimed in the paper.
+5. S04: most S04 gene UMIs come from keratinocytes (59% in controls, 83% in lesional skin). S04 score within keratinocytes AUC 0.56 (p 0.82); fraction of cycling keratinocytes AUC 0.61 (p 0.59). The keratinocyte-proliferation explanation is not supported in this cohort; the paper now treats S04 as unconfirmed.
+6. Abstract shortened to 249 words to make room for one sentence on the second cohort. Table II gained a column with the second-cohort AUC.
