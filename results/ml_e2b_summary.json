@@ -1,0 +1,23 @@
+{
+ "cells_melanocyte": 340,
+ "cells_other": 11924,
+ "background_fraction_melanocyte_enriched_among_detected_genes": 0.0175,
+ "freq>=0.5": {
+  "n_genes": 9,
+  "typing_markers": 0,
+  "melanocyte_enriched_non_marker": 7,
+  "of_non_marker": 9
+ },
+ "freq>=0.25": {
+  "n_genes": 36,
+  "typing_markers": 4,
+  "melanocyte_enriched_non_marker": 11,
+  "of_non_marker": 32
+ },
+ "freq>=0.04": {
+  "n_genes": 286,
+  "typing_markers": 6,
+  "melanocyte_enriched_non_marker": 32,
+  "of_non_marker": 280
+ }
+}

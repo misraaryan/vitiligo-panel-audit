@@ -19,6 +19,8 @@ A curated pigment gene set with no data-driven selection reaches AUC 0.94 in les
 
 Post hoc checks: in a site-matched comparison of lesional with perilesional skin from the same 23 patients, P02 and P06 stay strongly separated and P04, P09 and S02 stay reversed, while P05 and S04 weaken. Of the 12 inferred gene directions that could be checked in GSE75819, 11 agree. In a second, single-cell cohort (GSE298871, pseudobulk, 6 lesional vs 6 healthy), P05 and P06 replicate again, P04 and P09 again point in the opposite direction (AUC 0.17 and 0.11; exact p = 0.065 and 0.026), and S04 does not replicate.
 
+Machine-learning comparison (post hoc): logistic regression trained on each panel's genes (5-fold CV, 5 repeats) reaches AUC 0.37 to 0.97 in lesional skin, but models trained on the panels' matched random gene sets reach median AUCs of 0.64 to 0.83, and after FDR correction no panel beats its random sets (lowest q = 0.098; SVM and random forest agree). P04 and P09, whose published directions are reversed, reach AUC 0.94 and 0.97 once retrained, because training flips the direction. A genome-wide LASSO (nested CV) reaches AUC 0.985; of the 9 genes chosen in at least half of the models, 7 are melanocyte-enriched in the GSE298871 single-cell data (vs 1.75% of all genes; binomial p = 1.8e-11). Trained on GSE311770 and tested once on GSE298871, only P06 holds up (AUC 0.97), and the training-free score is equal to or better than the retrained model for 9 of 14 panels.
+
 ## Pre-specified analysis
 
 All panels, gene directions, null gene sets, reference sets, covariates and the random seed were written to `gene_sets_locked.json` before any panel was scored. Its SHA-256 fingerprint is in `gene_sets_locked.sha256`, and `code/stage45_evaluate.py` stops if the file has changed:
@@ -66,6 +68,8 @@ Download the public inputs into `data/` as described in `data/README.md`, then r
 | 11. Post hoc: check inferred directions in GSE75819 | `code/posthoc_direction_GSE75819.py`, then `code/posthoc_direction_rescore.py` | `posthoc_direction_*.tsv` |
 | 12. Post hoc: replication-rule sensitivity (needs `results_all.tsv` and `sens_null_10k.tsv` in the working directory) | `code/posthoc_rule_sensitivity.py` | `posthoc_rule_sensitivity.tsv` |
 | 13. Post hoc: second cohort GSE298871 (pseudobulk; needs `GSE298871_RAW.tar` from GEO extracted into a folder) | `code/sc_load_GSE298871.py`, `code/posthoc_GSE298871_pseudobulk.py`, `code/posthoc_GSE298871_celltypes.py` | `posthoc_GSE298871_*.tsv` |
+| 14. Post hoc: machine-learning comparison (E1: panels vs random sets, LR; E1b: SVM and random forest; E2: genome-wide LASSO and melanocyte check; E3: GSE311770 to GSE298871). E2, E2b and E3 take the `sc.pkl` from step 13; E2b needs E2's output and E3 needs `posthoc_GSE298871_pseudobulk.tsv` in the working directory | `code/ml_e1_panels_vs_random.py`, `code/ml_e1b_other_models.py`, `code/ml_e2_lasso_genomewide.py`, `code/ml_e2b_melanocyte_specificity.py`, `code/ml_e3_cross_cohort.py` | `ml_e*.tsv`, `ml_e*_summary.json` |
+| 15. Machine-learning figure and summary table | `code/make_figure_ml.py` | `fig_ml.pdf/png`, `ml_table_summary.tsv` |
 
 Scripts write their outputs to the working directory; the copies used in the paper are in `results/`. To reproduce the published numbers exactly, keep the committed `gene_sets_locked.json` and run steps 1 and 5 onwards. Re-running step 4 rebuilds the lock from the current NCBI gene annotation, which may differ slightly from the version used here.
 

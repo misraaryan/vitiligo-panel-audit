@@ -1,0 +1,15 @@
+{
+ "outer_AUC_mean": 0.985,
+ "outer_AUC_by_repeat": [
+  0.986,
+  0.985,
+  0.975,
+  0.988,
+  0.991
+ ],
+ "genes_selected_per_model_median": 19,
+ "n_models": 25,
+ "genes_selected_ever": 286,
+ "genes_selected_ge50pct": 9,
+ "pigment_among_ge50pct": 0
+}

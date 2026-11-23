@@ -1,0 +1,9 @@
+{
+ "train_n": 51,
+ "test_n": 12,
+ "test_lesional": 6,
+ "common_genes": 15067,
+ "genomewide_L1_test_AUC": 0.889,
+ "genomewide_L1_test_p": 0.026,
+ "genomewide_L1_genes_selected": 37
+}
