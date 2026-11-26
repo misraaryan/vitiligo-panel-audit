@@ -20,7 +20,7 @@ for m, c in [("svm_rbf", "q_svm"), ("rf", "q_rf")]:
 t["x_trained"] = e3.trained_LR_test_AUC; t["x_tf"] = e3.training_free_test_AUC; t["x_q"] = e3.q_BH
 t.to_csv("ml_table_summary.tsv", sep="\t")
 las = pd.read_csv(V + "ml_e2_lasso_selected_genes_annotated.tsv", sep="\t")
-fig, (a, b) = plt.subplots(1, 2, figsize=(7.0, 2.5), gridspec_kw={"width_ratios": [1.15, 1]})
+fig, (a, b) = plt.subplots(1, 2, figsize=(7.0, 2.38), gridspec_kw={"width_ratios": [1.15, 1]})
 order = list(e1.index)[::-1]; y = np.arange(len(order))
 for i, p in enumerate(order):
     a.plot([e1.loc[p, "null_median"], e1.loc[p, "null_q95"]], [i, i], color="#B4B2A9", lw=4, solid_capstyle="butt")
