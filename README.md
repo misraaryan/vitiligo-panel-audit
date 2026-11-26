@@ -2,8 +2,8 @@
 
 Code and results for the paper:
 
-**Are Transcriptomic Biomarkers for Vitiligo Replicated? An Independent Validation and Audit of Fourteen Gene Panels Using RNA-seq**
-Aryan Misra, Delhi Technological University (2026).
+**Do Machine-Learning Gene Signatures for Vitiligo Generalise? An Audit Against Random Baselines**
+Aryan Misra and Yasha Hasija, Department of Biotechnology, Delhi Technological University (2026).
 
 The study takes 14 published vitiligo gene panels and tests them, without retraining, on an independent bulk RNA-seq cohort (GEO: GSE311770; 105 skin biopsies from 28 patients and 27 healthy controls). Each panel is scored with a direction-aware within-sample rank score and compared with 1,000 expression-matched random gene sets, with Benjamini-Hochberg FDR control across panels.
 
