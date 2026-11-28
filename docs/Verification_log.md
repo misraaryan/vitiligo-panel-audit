@@ -35,7 +35,6 @@ Each earlier claim re-checked against its primary source. Status: CONFIRMED, COR
 3. Sensitivity analysis: direction-agnostic AUC (max of AUC, 1-AUC), labelled optimistic. A large gap between 1 and 3 identifies direction errors in the source papers.
 
 ## Still OPEN
-- INDIACom-2027 track scope (fetched page showed the 2026 edition); confirm the 2027 call for papers.
 - Xia 2026 full text (excluded for now).
 - Sample-level sebaceous/sex covariates to be added at scoring stage.
 
